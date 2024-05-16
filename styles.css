@@ -72,6 +72,18 @@ a{
     font-weight: bold;
 }
 
+@media (max-width:1500px) {
+  .nav-items {
+    padding: 0 8em;
+  }
+}
+
+@media (max-width:1000px) {
+  .nav-items {
+    display: none;
+  }
+}
+
 .hero-section{
     position:relative;
     display:flex;
@@ -290,6 +302,35 @@ a{
     50%{
         top:3%;
         left:48%
+    }
+  }
+
+  @media (max-width:1300px) {
+    .hero-section {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: -1rem;
+      padding-bottom: 3rem;
+    }
+    .hero-section-description {
+      text-align: center;
+      margin: auto;
+    }
+    .faded-text {
+      display: none;
+    }
+    #btn-top {
+      display: none;
+    }
+    #btn-bottom {
+      margin-top: -7rem;
+      display: block;
+    }
+    .hero-section-right {
+      margin-top: -6em;
+      scale: 0.7;
     }
   }
 
@@ -604,6 +645,39 @@ a{
   margin:15px 0;
 }
 
+@media (max-width: 1300px) {
+  .skills-container {
+    margin: 0;
+    padding: 2em;
+    flex-direction: column;
+  }
+  .skill-heading {
+    font-size: 40px;
+    font: bold;
+  }
+  .caps {
+    font-size: 60px;
+  }
+  .skill-container-left {
+    width: 100%;
+  }
+  .skill-container-right {
+    width: 100%;
+  }
+  .skills-logo {
+    width: 50px;
+  }
+  .skill-fade-text {
+    display: none;
+  }
+  .skill-subHeading {
+    width: 100%;
+  }
+  .skill-heading::after {
+    bottom: 9%;
+  }
+}
+
 .contactus-form-container{
   width:100%;
   background-color: rgb(231,231,231);
@@ -672,6 +746,32 @@ a{
   font-size:1.5rem;
 }
 
+@media (max-width: 1300px) {
+  .contactus-heading {
+    font-size: 40px;
+    text-align: center;
+    padding: 15px 10px;
+  }
+  .contactus-sub-heading {
+    font-size: 20px;
+    padding: 0 10px;
+    text-align: center;
+  }
+  .form {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+  }
+  .formfield-container {
+    display: flex;
+    align-items: center;
+    width: 90%;
+  }
+  .formfield {
+    width: 90%;
+  }
+}
+
 footer{
   position:relative;
   margin-top:-1px;
@@ -715,14 +815,16 @@ footer{
   gap:1rem;
 }
 
-@media screen and (max-width: 600px) {
-  /* CSS rules for screens up to 600px wide */
+@media (max-width: 1300px) {
+  footer {
+    padding: 0.5rem;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .footer-faded-text {
+    display: none;
+  }
 }
 
-@media screen and (min-width: 601px) and (max-width: 900px) {
-  /* CSS rules for screens between 601px and 900px wide */
-}
-
-@media screen and (min-width: 901px) {
-  /* CSS rules for screens wider than 900px */
-}
