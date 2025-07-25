@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import "tailwindcss";
+
+:root{
+    font-family: "Inter", sans-serif;
+    background: #00000f;
+}
+
+@media (min-width: 1020px) {
+  .img-right-1020 {
+    justify-content: flex-end !important;
+  }
+}
+
